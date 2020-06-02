@@ -7,8 +7,6 @@
 
 import { graphql, useStaticQuery } from 'gatsby'
 import React, { ReactNode } from 'react'
-import Header from './header'
-import './layout.css'
 
 const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
   const data = useStaticQuery(graphql`
@@ -23,7 +21,7 @@ const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {data.site.siteMetadata.title}
       <div
         style={{
           margin: `0 auto`,
