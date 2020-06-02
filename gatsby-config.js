@@ -3,10 +3,25 @@ module.exports = {
     title: `John Norman Capule`,
     description: `Hello there. I'm Normz. Let's build your ideas.`,
     author: `johnnormancapule@gmail.com`,
+    links: {
+      email: `johnnormancapule@gmail.com`,
+      github: `https://github.com/normancapule`,
+      linkedin: `https://www.linkedin.com/in/johnnormancapule`,
+      twitter: `https://twitter.com/normzcapule`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images\/icons/,
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

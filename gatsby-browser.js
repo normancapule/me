@@ -5,5 +5,6 @@
  */
 
 // You can delete this file if you're not using it
-
-import 'tailwindcss/dist/base.min.css'
+import 'typeface-ibm-plex-sans'
+import 'typeface-inter'
+import './src/globals.css'
