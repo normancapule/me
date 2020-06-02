@@ -7,6 +7,11 @@
 
 import { graphql, useStaticQuery } from 'gatsby'
 import React, { ReactNode } from 'react'
+import tw from 'twin.macro'
+
+const LayoutContainer = tw.div`
+    bg-gray-200 text-xl w-1/2
+`
 
 const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
   const data = useStaticQuery(graphql`
@@ -20,7 +25,7 @@ const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
   `)
 
   return (
-    <>
+    <LayoutContainer>
       {data.site.siteMetadata.title}
       <div
         style={{
@@ -36,7 +41,7 @@ const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
           <a href='https://www.gatsbyjs.org'>Gatsby</a>
         </footer>
       </div>
-    </>
+    </LayoutContainer>
   )
 }
 

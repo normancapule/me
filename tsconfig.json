@@ -17,5 +17,5 @@
     "lib": ["dom", "dom.iterable", "esnext"]
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"]
 }
