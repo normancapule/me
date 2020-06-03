@@ -19,18 +19,17 @@ const FooterContainer = tw.div`
 
 const ActionRow = tw.div`
   flex
-  flex-col
-  sm:flex-row
+  flex-row
   justify-between
   mt-4
 `
 
 const Link = tw.a`
-  mb-8
+  mx-8
+  first:ml-0
+  last:mr-0
   flex
   justify-center
-  sm:mx-8
-  sm:mb-0
 `
 
 const Footer = (): JSX.Element => {
