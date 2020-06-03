@@ -28,8 +28,10 @@ Feel free and use my configurations as you see fit.
 
 ## 🚧 Todo
 
-- [ ] Deploy to my domain
+- [x] Deploy to my domain
 
 - [ ] Blog section
 
 - [ ] First blog entry!
+
+- [ ] Light and Dark mode
