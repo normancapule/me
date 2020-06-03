@@ -8,7 +8,7 @@ Hello there! I built this as a personal challenge to practice my frontend skills
 
 I'll be publishing (_if time permits_) some learnings I acquired along the way.
 
-Feel free and use my configurations as you see fit.
+Feel free to use my configurations as you see fit.
 
 ## 🛠️ Built with
 
