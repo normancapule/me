@@ -14,13 +14,23 @@ const FooterContainer = tw.div`
   flex
   flex-col
   p-6
+  mt-16
 `
 
 const ActionRow = tw.div`
   flex
-  flex-row
+  flex-col
+  sm:flex-row
   justify-between
   mt-4
+`
+
+const Link = tw.a`
+  mb-8
+  flex
+  justify-center
+  sm:mx-8
+  sm:mb-0
 `
 
 const Footer = (): JSX.Element => {
@@ -43,32 +53,36 @@ const Footer = (): JSX.Element => {
 
   return (
     <FooterContainer>
-      <p>Contact me</p>
+      <p>Let&apos;s connect</p>
       <ActionRow>
-        <a href={`mailto:${site.siteMetadata.links.email}`}>
-          <Mail tw='mx-4' />
-        </a>
-        <a
+        <Link
+          href={`mailto:${site.siteMetadata.links.email}`}
+          target='_blank'
+          rel='noreferrer'
+        >
+          <Mail tw='h-8 w-8' />
+        </Link>
+        <Link
           href={site.siteMetadata.links.github}
           target='_blank'
           rel='noreferrer'
         >
-          <Github tw='mx-4' />
-        </a>
-        <a
+          <Github tw='h-8 w-8' />
+        </Link>
+        <Link
           href={site.siteMetadata.links.linkedin}
           target='_blank'
           rel='noreferrer'
         >
-          <Linkedin tw='mx-4' />
-        </a>
-        <a
+          <Linkedin tw='h-8 w-8' />
+        </Link>
+        <Link
           href={site.siteMetadata.links.twitter}
           target='_blank'
           rel='noreferrer'
         >
-          <Twitter tw='mx-4' />
-        </a>
+          <Twitter tw='h-8 w-8' />
+        </Link>
       </ActionRow>
     </FooterContainer>
   )

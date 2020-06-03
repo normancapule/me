@@ -8,13 +8,14 @@ module.exports = {
       colors: {
         dark: '#1A202C',
         primary: '#EDEEEE',
+        accent: '#F9BC40',
         borders: {
           footer: '#727272',
         },
       },
       fontFamily: {
-        primary: ['IBM Plex Sans', 'sans'],
-        secondary: ['Inter', 'sans'],
+        primary: ['Inter', 'sans'],
+        secondary: ['IBM Plex Sans', 'sans'],
       },
       fontSize: {
         sm: '0.8em',

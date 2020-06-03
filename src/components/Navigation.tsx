@@ -9,6 +9,7 @@ const Link = tw.a`
   hover:underline
   pr-6
   text-lg
+  font-secondary
   last:pr-0
 `
 

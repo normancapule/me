@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import tw, { styled } from 'twin.macro'
 import Footer from './Footer'
-import Navigation from './Navigation'
+// import Navigation from './Navigation'
 
 const MainContainer = tw.div`
   bg-dark
@@ -15,9 +15,11 @@ const LayoutContainer = styled.div`
     grid
     grid-rows-layout
     gap-4
-    sm:py-4
-    sm:px-8
+    py-4
+    px-8
+    justify-center
     text-primary
+    font-primary
     max-w-screen-xl
     min-h-screen
     w-full
@@ -32,7 +34,7 @@ const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
   return (
     <MainContainer>
       <LayoutContainer>
-        <Navigation />
+        {/* <Navigation /> */}
         <ContentContainer>{children}</ContentContainer>
         <Footer />
       </LayoutContainer>
