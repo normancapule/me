@@ -24,6 +24,8 @@ Feel free and use my configurations as you see fit.
 
 - [Figma](https://www.figma.com)
 
+- [Netlify](https://www.netlify.com/)
+
 ## 🚧 Todo
 
 - [ ] Deploy to my domain
