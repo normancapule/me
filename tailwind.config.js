@@ -25,9 +25,6 @@ module.exports = {
         xl: '1.953em',
         '2xl': '2.441em',
       },
-      gridTemplateRows: {
-        layout: 'auto 1fr auto',
-      },
     },
   },
   variants: {},

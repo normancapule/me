@@ -29,6 +29,8 @@ const Highlight = tw.span`
 const Tech = tw.div`
   mt-1
   flex
+  flex-col
+  sm:flex-row
 `
 
 const TechColumn = tw.div`

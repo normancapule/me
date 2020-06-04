@@ -12,8 +12,8 @@ const MainContainer = tw.div`
 const LayoutContainer = styled.div`
   ${tw`
     text-base
-    grid
-    grid-rows-layout
+    flex
+    flex-col
     gap-4
     py-4
     px-8

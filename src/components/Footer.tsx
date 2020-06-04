@@ -25,7 +25,8 @@ const ActionRow = tw.div`
 `
 
 const Link = tw.a`
-  mx-8
+  sm:mx-8
+  mx-4
   first:ml-0
   last:mr-0
   flex
