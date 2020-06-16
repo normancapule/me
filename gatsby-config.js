@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `John Norman Capule`,
-    description: `Hello there. I'm Normz. Let's build your ideas.`,
+    description: `I'm a frontend and backend developer specialized in Ruby on Rails, JS and CSS. Let's work together and build ideas.`,
     author: `johnnormancapule@gmail.com`,
     links: {
       email: `johnnormancapule@gmail.com`,
