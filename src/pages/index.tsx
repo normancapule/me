@@ -9,6 +9,7 @@ import JS from '../images/icons/js.svg'
 import HtmlIcon from '../images/icons/html-icon.svg'
 import Psql from '../images/icons/psql.svg'
 import Heroku from '../images/icons/heroku.svg'
+import AWS from '../images/icons/aws.svg'
 import Docker from '../images/icons/docker.svg'
 
 const Title = tw.div`
@@ -96,6 +97,10 @@ const IndexPage = (): JSX.Element => (
           <TechRow>
             <Heroku tw='h-6 w-6 mr-2' />
             <Highlight>Heroku</Highlight>
+          </TechRow>
+          <TechRow>
+            <AWS tw='h-6 w-6 mr-2' />
+            <Highlight>AWS</Highlight>
           </TechRow>
         </TechColumn>
       </Tech>
