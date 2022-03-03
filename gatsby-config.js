@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `John Norman Capule`,
     description: `I'm a frontend and backend developer specialized in Ruby on Rails, JS and CSS. Let's work together and build ideas.`,
-    author: `johnnormancapule@gmail.com`,
+    author: `normancapule@duck.com`,
     links: {
-      email: `johnnormancapule@gmail.com`,
+      email: `normancapule@duck.com`,
       github: `https://github.com/normancapule`,
       linkedin: `https://www.linkedin.com/in/johnnormancapule`,
       twitter: `https://twitter.com/normzcapule`,
