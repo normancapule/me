@@ -1,37 +1,62 @@
-<h1 align="center">
-  My Personal Website
-</h1>
+# Welcome to Remix!
 
-## 📝 What's this?
+- [Remix Docs](https://remix.run/docs)
+- [Netlify Functions](https://www.netlify.com/products/functions/)
 
-Hello there! I built this as a personal challenge to practice my frontend skills.
+## Netlify Setup
 
-I'll be publishing (_if time permits_) some learnings I acquired along the way.
+1. Install the [Netlify CLI](https://www.netlify.com/products/dev/):
 
-Feel free to use my configurations as you see fit.
+```sh
+npm i -g netlify-cli
+```
 
-## 🛠️ Built with
+If you have previously installed the Netlify CLI, you should update it to the latest version:
 
-- [GatsbyJS](gatsbyjs.org)
+```sh
+npm i -g netlify-cli@latest
+```
 
-- [ReactJS](https://reactjs.org/)
+2. Sign up and log in to Netlify:
 
-- [Typescript](https://www.typescriptlang.org/)
+```sh
+netlify login
+```
 
-- [TailwindCSS](tailwindcss.com)
+3. Create a new site:
 
-- [Styled Components](https://styled-components.com)
+```sh
+netlify init
+```
 
-- [Figma](https://www.figma.com)
+## Development
 
-- [Netlify](https://www.netlify.com/)
+The Remix dev server starts your app in development mode, rebuilding assets on file changes. To start the Remix dev server:
 
-## 🚧 Todo
+```sh
+npm run dev
+```
 
-- [x] Deploy to my domain
+Open up [http://localhost:3000](http://localhost:3000), and you should be ready to go!
 
-- [ ] Blog section
+The Netlify CLI builds a production version of your Remix App Server and splits it into Netlify Functions that run locally. This includes any custom Netlify functions you've developed. The Netlify CLI runs all of this in its development mode.
 
-- [ ] First blog entry!
+```sh
+netlify dev
+```
 
-- [ ] Light and Dark mode
+Open up [http://localhost:3000](http://localhost:3000), and you should be ready to go!
+
+Note: When running the Netlify CLI, file changes will rebuild assets, but you will not see the changes to the page you are on unless you do a browser refresh of the page. Due to how the Netlify CLI builds the Remix App Server, it does not support hot module reloading.
+
+## Deployment
+
+There are two ways to deploy your app to Netlify, you can either link your app to your git repo and have it auto deploy changes to Netlify, or you can deploy your app manually. If you've followed the setup instructions already, all you need to do is run this:
+
+```sh
+# preview deployment
+netlify deploy --build
+
+# production deployment
+netlify deploy --build --prod
+```
